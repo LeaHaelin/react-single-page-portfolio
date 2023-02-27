@@ -1,0 +1,20 @@
+@import url(./_nav.scss);
+@import url(./_header.scss);
+@import url(./_skills.scss);
+@import url(./_projects.scss);
+@import url(./_contact.scss);
+@import url(./_footer.scss);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: "Space Grotesk";
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url(../assets/fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}/*# sourceMappingURL=app.css.map */
