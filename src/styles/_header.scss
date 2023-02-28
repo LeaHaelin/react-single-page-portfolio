@@ -1,0 +1,38 @@
+.header {
+    margin-top: 40px;
+    border: 1px solid salmon;
+}
+
+.header__intro {
+    font-weight: 700;
+    font-size: 38px;
+    color: $white;
+}
+
+.header__intro--name {
+    border-bottom: 4px solid $green;
+}
+
+.header__text {
+    margin-top: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: $grey;
+}
+
+.header__contact,
+.contact-me {
+    margin-top: 24px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 2.29px;
+    text-transform: uppercase;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid $green;
+    color: $white;
+    padding-bottom: 10px;
+}

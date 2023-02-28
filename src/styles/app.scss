@@ -1,11 +1,31 @@
+$black: #151515;
+$darkGrey: #242424;
+$grey: #D9D9D9;
+$white: #FFFFFF;
+$green: #4EE1A0;
+$patternCircle: url("../assets/images/pattern-circle.svg");
+$patternRings: url("../assets/images/pattern-rings.svg");
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+body {
+    background-color: $black;
+    border: 1px solid rgb(65, 225, 134);
+}
+
 .App {
+    border: 1px solid red;
+    margin: 0 auto;
+    padding: 0 16px;
+    max-width: 375px;
+    text-align: center;
     font-family: "Space Grotesk";
+    background: no-repeat top 124px right 187px $patternRings,
+        no-repeat top 254px left 311px $patternCircle;
 }
 
 @font-face {
@@ -13,9 +33,10 @@
     src: url(../assets/fonts/SpaceGrotesk-VariableFont_wght.ttf);
 }
 
-@import url(./_nav.scss);
-@import url(./_header.scss);
-@import url(./_skills.scss);
-@import url(./_projects.scss);
-@import url(./_contact.scss);
-@import url(./_footer.scss);
+
+@import "./nav";
+@import "./header";
+@import "./skills";
+@import "./projects";
+@import "./contact";
+@import "./footer";

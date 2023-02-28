@@ -1,20 +1,93 @@
-@import url(./_nav.scss);
-@import url(./_header.scss);
-@import url(./_skills.scss);
-@import url(./_projects.scss);
-@import url(./_contact.scss);
-@import url(./_footer.scss);
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+body {
+  background-color: #151515;
+  border: 1px solid rgb(65, 225, 134);
+}
+
 .App {
+  border: 1px solid red;
+  margin: 0 auto;
+  padding: 0 16px;
+  max-width: 375px;
+  text-align: center;
   font-family: "Space Grotesk";
+  background: no-repeat top 124px right 187px url("../assets/images/pattern-rings.svg"), no-repeat top 254px left 311px url("../assets/images/pattern-circle.svg");
 }
 
 @font-face {
   font-family: "Space Grotesk";
   src: url(../assets/fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+.banner {
+  margin: 0 auto;
+  border: 1px solid #4EE1A0;
+  width: 174px;
+}
+
+.banner__logo {
+  font-weight: 700;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.banner__icons {
+  border: 1px solid rebeccapurple;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.nav {
+  background: url("../assets/images/image-profile-mobile.webp");
+  height: 383px;
+  background-size: 100%;
+  padding: 20px 10px;
+}
+
+.header {
+  margin-top: 40px;
+  border: 1px solid salmon;
+}
+
+.header__intro {
+  font-weight: 700;
+  font-size: 38px;
+  color: #FFFFFF;
+}
+
+.header__intro--name {
+  border-bottom: 4px solid #4EE1A0;
+}
+
+.header__text {
+  margin-top: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #D9D9D9;
+}
+
+.header__contact,
+.contact-me {
+  margin-top: 24px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 2.29px;
+  text-transform: uppercase;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #4EE1A0;
+  color: #FFFFFF;
+  padding-bottom: 10px;
+}
+
+.project__skill {
+  word-spacing: 1rem;
 }/*# sourceMappingURL=app.css.map */
