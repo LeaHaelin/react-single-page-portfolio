@@ -13,7 +13,11 @@ $patternRings: url("../assets/images/pattern-rings.svg");
 }
 
 body {
-    background-color: $black;
+    background: linear-gradient(to bottom,
+            $black 0%,
+            $black 81.5%,
+            $darkGrey 81.5%,
+            $darkGrey 100%);
     border: 1px solid rgb(65, 225, 134);
 }
 
@@ -26,6 +30,10 @@ body {
     font-family: "Space Grotesk";
     background: no-repeat top 124px right 187px $patternRings,
         no-repeat top 254px left 311px $patternCircle;
+}
+
+.line {
+    border: 1px solid $white;
 }
 
 @font-face {

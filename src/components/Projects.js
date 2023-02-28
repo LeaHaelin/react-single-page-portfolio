@@ -60,6 +60,10 @@ export const Projects = () => {
     ]
     return (
         <div className="projects">
+            <div className="projects__header">
+                <h2 className="projects__title">Projects</h2>
+                <button className="projects__contact contact-me">contact me</button>
+            </div>
             {projectsArr.map(project => {
                 return (
                     <div className="project">
@@ -70,8 +74,8 @@ export const Projects = () => {
                         <h3 className="project__title">{project.title}</h3>
                         <p className="project__skill">{project.skill} </p>
                         <div className="project__urls">
-                            <a className='project__url--site' href="/">view portfolio</a>
-                            <a className='project__url--code' href="/">view code</a>
+                            <a className='project__url view-site' href="/">view portfolio</a>
+                            <a className='project__url view-code' href="/">view code</a>
                         </div>
                     </div>
                 )

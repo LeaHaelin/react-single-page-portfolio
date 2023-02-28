@@ -1,0 +1,61 @@
+.contact {
+    margin-bottom: 87px;
+}
+
+.contact__header {
+    font-weight: 700;
+    font-size: 40px;
+    color: $white;
+    margin-top: 60px;
+}
+
+.contact__text {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: $grey;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.contact__details,
+textarea {
+    border: none;
+    border-bottom: 1px solid $white;
+    background-color: transparent;
+    outline: none;
+    margin-bottom: 32px;
+    padding: 17px 24px;
+    font-weight: 500;
+    font-size: 16px;
+    color: $grey;
+}
+
+.contact__details::placeholder,
+textarea::placeholder {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: "Space Grotesk";
+}
+
+.contact__submit {
+    font-family: "Space Grotesk";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 2.29px;
+    color: $white;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    width: fit-content;
+    border-bottom: 2px solid $green;
+    padding-bottom: 10px;
+    margin-left: auto;
+}

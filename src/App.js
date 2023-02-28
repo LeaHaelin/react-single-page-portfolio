@@ -17,13 +17,12 @@ function App() {
     <div className="App">
       <Nav iconGithub={iconGithub} iconFrontendM={iconFrontendM} iconLinkedin={iconLinkedin} iconTwitter={iconTwitter} />
       <Header />
-      <hr />
+      <hr className="line" />
       <Skills />
-      <hr />
+      <hr className="line" />
       <Projects />
-      <hr />
       <Contact />
-      <hr />
+      <hr className="line" />
       <Footer iconGithub={iconGithub} iconFrontendM={iconFrontendM} iconLinkedin={iconLinkedin} iconTwitter={iconTwitter} />
     </div>
   );
