@@ -22,14 +22,17 @@ body {
 }
 
 .App {
-    border: 1px solid red;
+    // border: 1px solid red;
     margin: 0 auto;
     padding: 0 16px;
     max-width: 375px;
     text-align: center;
     font-family: "Space Grotesk";
     background: no-repeat top 124px right 187px $patternRings,
-        no-repeat top 254px left 311px $patternCircle;
+        no-repeat top 254px left 311px $patternCircle,
+        no-repeat top 1320px left 189px $patternRings,
+        no-repeat bottom 220px right 189px $patternRings;
+    ;
 }
 
 .line {

@@ -10,13 +10,12 @@ body {
 }
 
 .App {
-  border: 1px solid red;
   margin: 0 auto;
   padding: 0 16px;
   max-width: 375px;
   text-align: center;
   font-family: "Space Grotesk";
-  background: no-repeat top 124px right 187px url("../assets/images/pattern-rings.svg"), no-repeat top 254px left 311px url("../assets/images/pattern-circle.svg");
+  background: no-repeat top 124px right 187px url("../assets/images/pattern-rings.svg"), no-repeat top 254px left 311px url("../assets/images/pattern-circle.svg"), no-repeat top 1320px left 189px url("../assets/images/pattern-rings.svg"), no-repeat bottom 220px right 189px url("../assets/images/pattern-rings.svg");
 }
 
 .line {
@@ -181,6 +180,7 @@ body {
   color: #FFFFFF;
   padding-bottom: 10px;
   margin-right: 30px;
+  text-decoration: none;
 }
 
 .contact {
