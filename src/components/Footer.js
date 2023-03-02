@@ -1,15 +1,11 @@
-import React from 'react'
+import React from 'react';
+import { Icons } from "./Icons";
 
-export const Footer = ({ iconGithub, iconFrontendM, iconLinkedin, iconTwitter }) => {
+export const Footer = () => {
     return (
         <div className='footer banner'>
             <h3 className='banner__logo'>adamkeyes</h3>
-            <div className='banner__icons'>
-                <img src={iconGithub} alt="github icon" className="banner__icon" />
-                <img src={iconFrontendM} alt="frontend mentor icon" className="banner__icon" />
-                <img src={iconLinkedin} alt="linkedin icon" className="banner__icon" />
-                <img src={iconTwitter} alt="twitter icon" className="banner__icon" />
-            </div>
+            <Icons />
         </div>
     )
 }

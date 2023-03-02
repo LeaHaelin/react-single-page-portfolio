@@ -26,6 +26,13 @@ body {
   font-family: "Space Grotesk";
   src: url(../assets/fonts/SpaceGrotesk-VariableFont_wght.ttf);
 }
+.nav {
+  background: url("../assets/images/image-profile-mobile.webp");
+  height: 383px;
+  background-size: 100%;
+  padding: 20px 10px;
+}
+
 .banner {
   margin: 0 auto;
   border: 1px solid #4EE1A0;
@@ -45,11 +52,14 @@ body {
   margin-top: 20px;
 }
 
-.nav {
-  background: url("../assets/images/image-profile-mobile.webp");
-  height: 383px;
-  background-size: 100%;
-  padding: 20px 10px;
+.banner__icon {
+  border: 1px solid palegoldenrod;
+}
+
+.banner__icon:hover,
+.icon__link:hover {
+  cursor: pointer;
+  fill: #4EE1A0;
 }
 
 .header {
@@ -247,4 +257,5 @@ textarea::placeholder {
 
 .footer {
   margin: 40px auto 60px;
+  border: 1px solid salmon;
 }/*# sourceMappingURL=app.css.map */

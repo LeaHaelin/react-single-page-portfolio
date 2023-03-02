@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 
 export const Contact = ({ iconGithub, iconFrontendM, iconLinkedin, iconTwitter }) => {
     const form = useRef();
+
     const sendEmail = (e) => {
         e.preventDefault();
         emailjs.sendForm('service_n4tziu4', 'template_779kkzr', form.current, 'BZhdQ7yZrGx-UNv9b')

@@ -1,0 +1,28 @@
+.banner {
+    margin: 0 auto;
+    border: 1px solid $green;
+    width: 174px;
+}
+
+.banner__logo {
+    font-weight: 700;
+    font-size: 24px;
+    color: $white;
+}
+
+.banner__icons {
+    border: 1px solid rebeccapurple;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.banner__icon {
+    border: 1px solid palegoldenrod;
+}
+
+.banner__icon:hover,
+.icon__link:hover {
+    cursor: pointer;
+    fill: $green;
+}

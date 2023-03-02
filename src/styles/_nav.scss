@@ -3,27 +3,6 @@ $photoTB: url('../assets/images/image-profile-tablet.webp');
 $photoDT: url('../assets/images/image-profile-desktop.webp');
 
 
-
-.banner {
-    margin: 0 auto;
-    border: 1px solid $green;
-    width: 174px;
-}
-
-
-.banner__logo {
-    font-weight: 700;
-    font-size: 24px;
-    color: $white;
-}
-
-.banner__icons {
-    border: 1px solid rebeccapurple;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
 .nav {
     background: $photoMB;
     height: 383px;
