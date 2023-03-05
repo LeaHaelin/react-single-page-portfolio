@@ -2,7 +2,7 @@
     margin-bottom: 87px;
 }
 
-.contact__header {
+.contact__title {
     font-weight: 700;
     font-size: 40px;
     color: $white;
@@ -21,10 +21,10 @@
     display: flex;
     flex-direction: column;
     margin-top: 50px;
+    position: relative;
 }
 
-.contact__details,
-textarea {
+.contact__detail {
     border: none;
     border-bottom: 1px solid $white;
     background-color: transparent;
@@ -33,15 +33,60 @@ textarea {
     padding: 17px 24px;
     font-weight: 500;
     font-size: 16px;
-    color: $grey;
+    color: $white;
 }
 
-.contact__details::placeholder,
+.contact__detail::placeholder,
 textarea::placeholder {
     text-transform: uppercase;
     font-weight: 500;
     font-size: 16px;
     font-family: "Space Grotesk";
+}
+
+.name:focus,
+.email:focus,
+.message:focus {
+    border-bottom: 1px solid $green;
+    background-color: transparent;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 40px $darkGrey inset;
+    -webkit-text-fill-color: $white;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+//contact__detail email--error
+.email--error {
+    border-bottom: 1px solid $red;
+    margin-bottom: 0;
+    background-color: transparent;
+}
+
+.email__validation--exclamation {
+    border: 1px solid $red;
+    border-radius: 50px;
+    width: 24px;
+    height: 24px;
+    color: $red;
+    position: absolute;
+    top: 100px;
+    right: 0;
+
+}
+
+.email__validation--error {
+    font-weight: 500;
+    font-size: 12px;
+    color: $red;
+    margin-left: auto;
+    margin-top: 5px;
+    margin-bottom: 11px;
 }
 
 .contact__submit {

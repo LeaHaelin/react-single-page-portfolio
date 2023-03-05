@@ -65,3 +65,8 @@
     margin-right: 30px;
     text-decoration: none;
 }
+
+.project__url:hover {
+    cursor: pointer;
+    color: $green;
+}
