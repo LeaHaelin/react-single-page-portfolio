@@ -10,6 +10,7 @@ body {
 }
 
 .App {
+  border: 1px solid red;
   margin: 0 auto;
   padding: 0 16px;
   max-width: 375px;
@@ -18,23 +19,46 @@ body {
   background: no-repeat top 124px right 187px url("../assets/images/pattern-rings.svg"), no-repeat top 254px left 311px url("../assets/images/pattern-circle.svg"), no-repeat top 1320px left 189px url("../assets/images/pattern-rings.svg"), no-repeat bottom 220px right 189px url("../assets/images/pattern-rings.svg");
 }
 
+.header {
+  background: no-repeat top center url("../assets/images/image-profile-mobile.webp");
+  background-size: 174px 383px;
+  margin-bottom: 80px;
+}
+
 .line {
   border: 1px solid #FFFFFF;
 }
 
+@media (min-width: 700px) {
+  .App {
+    min-width: 700px;
+    border: 1px solid red;
+    padding: 0 30px;
+  }
+  .header {
+    background: no-repeat top right url("../assets/images/image-profile-tablet.webp");
+    background-size: 322px 600px;
+    margin: 0 -30px 60px 0;
+  }
+}
+@media (min-width: 1000px) {
+  .App {
+    min-width: 1000px;
+    border: 1px solid red;
+    padding: 0 165px;
+  }
+  .header {
+    background: no-repeat top right url("../assets/images/image-profile-desktop.webp");
+    background-size: 445px 720px;
+    margin: 0 -165px 104px -165px;
+  }
+}
 @font-face {
   font-family: "Space Grotesk";
   src: url(../assets/fonts/SpaceGrotesk-VariableFont_wght.ttf);
 }
-.nav {
-  background: url("../assets/images/image-profile-mobile.webp");
-  height: 383px;
-  background-size: 100%;
-  padding: 20px 10px;
-}
-
 .banner {
-  margin: 0 auto;
+  margin: 20px auto 0px;
   border: 1px solid #4EE1A0;
   width: 174px;
 }
@@ -45,10 +69,24 @@ body {
   color: #FFFFFF;
 }
 
+@media (min-width: 700px) {
+  .banner {
+    width: 100%;
+    margin-top: 29px;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .banner__logo {
+    font-size: 32px;
+  }
+}
 .banner__icons {
   border: 1px solid rebeccapurple;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 20px;
 }
 
@@ -62,22 +100,34 @@ body {
   fill: #4EE1A0;
 }
 
-.header {
-  margin: 40px 0 80px;
-  border: 1px solid salmon;
+@media (min-width: 700px) {
+  .banner {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .banner__icons {
+    margin-top: 0;
+    width: 200px;
+  }
+}
+.hero {
+  margin-top: 331px;
 }
 
-.header__intro {
+.hero__intro {
   font-weight: 700;
-  font-size: 38px;
+  font-size: 40px;
+  line-height: 40px;
   color: #FFFFFF;
 }
 
-.header__intro--name {
+.hero__intro--name {
   border-bottom: 4px solid #4EE1A0;
 }
 
-.header__text {
+.hero__text {
   margin-top: 24px;
   font-weight: 500;
   font-size: 16px;
@@ -85,7 +135,7 @@ body {
   color: #D9D9D9;
 }
 
-.header__contact,
+.hero__contact,
 .contact-me {
   margin-top: 24px;
   font-weight: 700;
@@ -106,6 +156,19 @@ body {
   color: #4EE1A0;
 }
 
+@media (min-width: 700px) {
+  .hero {
+    margin: 90px 0 0;
+    text-align: left;
+  }
+  .hero__intro {
+    font-size: 72px;
+    line-height: 72px;
+  }
+  .hero__intro--name {
+    border-bottom: 6px solid #4EE1A0;
+  }
+}
 .skills {
   border: 1px solid mediumaquamarine;
   margin: 40px 0 16px;

@@ -1,6 +1,6 @@
 import React from "react";
 import { Nav } from "./components/Nav";
-import { Header } from "./components/Header";
+import { Hero } from "./components/Hero";
 import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
@@ -15,8 +15,10 @@ function App() {
 
   return (
     <div className="App">
-      <Nav iconGithub={iconGithub} iconFrontendM={iconFrontendM} iconLinkedin={iconLinkedin} iconTwitter={iconTwitter} />
-      <Header />
+      <section className="header">
+        <Nav iconGithub={iconGithub} iconFrontendM={iconFrontendM} iconLinkedin={iconLinkedin} iconTwitter={iconTwitter} />
+        <Hero />
+      </section>
       <hr className="line" />
       <Skills />
       <hr className="line" />

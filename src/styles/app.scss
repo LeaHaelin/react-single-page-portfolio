@@ -6,6 +6,9 @@ $green: #4EE1A0;
 $red: #FF6F5B;
 $patternCircle: url("../assets/images/pattern-circle.svg");
 $patternRings: url("../assets/images/pattern-rings.svg");
+$photoMB: url('../assets/images/image-profile-mobile.webp');
+$photoTB: url('../assets/images/image-profile-tablet.webp');
+$photoDT: url('../assets/images/image-profile-desktop.webp');
 
 * {
     padding: 0;
@@ -23,7 +26,7 @@ body {
 }
 
 .App {
-    // border: 1px solid red;
+    border: 1px solid red;
     margin: 0 auto;
     padding: 0 16px;
     max-width: 375px;
@@ -32,13 +35,49 @@ body {
     background: no-repeat top 124px right 187px $patternRings,
         no-repeat top 254px left 311px $patternCircle,
         no-repeat top 1320px left 189px $patternRings,
-        no-repeat bottom 220px right 189px $patternRings;
-    ;
+        no-repeat bottom 220px right 189px $patternRings,
+}
+
+.header {
+    background: no-repeat top center $photoMB;
+    background-size: 174px 383px;
+    margin-bottom: 80px;
 }
 
 .line {
     border: 1px solid $white;
 }
+
+@media(min-width:700px) {
+    .App {
+        min-width: 700px;
+        border: 1px solid red;
+        padding: 0 30px;
+    }
+
+    //TB, DT screen has full width
+    .header {
+        background: no-repeat top right $photoTB;
+        background-size: 322px 600px;
+        margin: 0 -30px 60px 0;
+    }
+}
+
+@media(min-width:1000px) {
+    .App {
+        min-width: 1000px;
+        border: 1px solid red;
+        padding: 0 165px;
+    }
+
+    .header {
+        background: no-repeat top right $photoDT;
+        background-size: 445px 720px;
+        margin: 0 -165px 104px -165px;
+    }
+}
+
+
 
 @font-face {
     font-family: "Space Grotesk";
@@ -48,7 +87,7 @@ body {
 
 @import "./nav";
 @import "./icons";
-@import "./header";
+@import "./hero";
 @import "./skills";
 @import "./projects";
 @import "./contact";
