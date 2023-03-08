@@ -88,3 +88,13 @@
         width: 342px;
     }
 }
+
+@media(min-width:1400px) {
+    .projects {
+        margin-top: 82px;
+    }
+
+    .projects__title {
+        font-weight: 88px;
+    }
+}

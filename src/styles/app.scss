@@ -27,18 +27,18 @@ body {
 
 .App {
     margin: 0 auto;
-    padding: 20px 16px 0;
+    padding: 20px 16px 80px;
     min-width: 375px;
     max-width: 500px;
     text-align: center;
     font-family: "Space Grotesk";
     background:
+        no-repeat top 254px left 311px $patternCircle,
         no-repeat top center $photoMB,
         no-repeat top 124px right 187px $patternRings,
-        no-repeat top 254px left 311px $patternCircle,
         no-repeat top 1320px left 189px $patternRings,
         no-repeat bottom 220px right 189px $patternRings;
-    background-size: 174px 383px, auto, auto, auto, auto;
+    background-size: auto, 174px 383px, auto, auto, auto;
 }
 
 .line {
@@ -48,13 +48,12 @@ body {
 @media(min-width:768px) {
     .App {
         min-width: 768px;
-        padding: 30px 30px 0;
-        border: 1px solid rgb(65, 225, 134);
+        padding: 30px 30px 40px;
         background:
             no-repeat top 86px right 503px $patternRings,
             no-repeat top 471px left 702px $patternCircle,
-            no-repeat top 1320px left 189px $patternRings,
-            no-repeat bottom 220px right 189px $patternRings,
+            no-repeat top 1047px left 570px $patternRings,
+            no-repeat bottom 130px right 606px $patternRings,
             no-repeat top right $photoTB;
         background-size: auto, auto, auto, auto, 322px 600px;
     }
@@ -64,18 +63,20 @@ body {
     }
 }
 
-@media(min-width:1000px) {
+@media(min-width:1400px) {
     .App {
-        min-width: 1000px;
+        min-width: 1440px;
         border: 1px solid red;
-        padding: 0 165px;
+        padding: 40px 165px 92px 160px;
+        background:
+            no-repeat top 86px right 503px $patternRings,
+            no-repeat top 471px left 702px $patternCircle,
+            no-repeat top 1047px left 570px $patternRings,
+            no-repeat bottom 130px right 606px $patternRings,
+            no-repeat top left 835px $photoDT;
+        background-size: auto, auto, auto, auto, 445px 720px;
     }
 
-    .header {
-        background: no-repeat top right $photoDT;
-        background-size: 445px 720px;
-        margin: 0 -165px 104px -165px;
-    }
 }
 
 

@@ -103,3 +103,24 @@ input:-webkit-autofill:active {
     padding-bottom: 10px;
     margin-left: auto;
 }
+
+@media(min-width:768px) {
+    .contact {
+        margin: 100px 130px 92px;
+        border: 1px solid red;
+    }
+
+    .contact__title {
+        margin-top: 60px;
+        font-size: 72px;
+    }
+
+    .contact__text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .contact__form {
+        margin-top: 48px;
+    }
+}
