@@ -1,5 +1,5 @@
 .banner {
-    margin: 20px auto 0px;
+    margin: 0px auto;
     border: 1px solid $green;
     width: 174px;
 }
@@ -10,11 +10,10 @@
     color: $white;
 }
 
-@media(min-width:700px) {
+@media(min-width:768px) {
     .banner {
+        border: 1px solid rebeccapurple;
         width: 100%;
-        margin-top: 29px;
-        padding: 0 30px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;

@@ -1,5 +1,6 @@
 .hero {
-    margin-top: 331px;
+    margin: 331px 0 80px;
+    border: 1px solid rosybrown;
 }
 
 .hero__intro {
@@ -42,18 +43,30 @@
     color: $green;
 }
 
-@media(min-width:700px) {
+@media(min-width:768px) {
     .hero {
-        margin: 90px 0 0;
+        margin: 90px 0 60px;
+        width: 445px;
         text-align: left;
     }
 
     .hero__intro {
         font-size: 72px;
         line-height: 72px;
+        letter-spacing: -2.05px;
     }
 
     .hero__intro--name {
         border-bottom: 6px solid $green;
+    }
+
+    .hero__text {
+        margin-top: 60px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .hero__contact {
+        margin-top: 34px;
     }
 }

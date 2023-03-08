@@ -15,16 +15,14 @@ function App() {
 
   return (
     <div className="App">
-      <section className="header">
-        <Nav iconGithub={iconGithub} iconFrontendM={iconFrontendM} iconLinkedin={iconLinkedin} iconTwitter={iconTwitter} />
-        <Hero />
-      </section>
-      <hr className="line" />
+      <Nav iconGithub={iconGithub} iconFrontendM={iconFrontendM} iconLinkedin={iconLinkedin} iconTwitter={iconTwitter} />
+      <Hero />
+      <hr className="line top-line" />
       <Skills />
-      <hr className="line" />
+      <hr className="line middle-line" />
       <Projects />
       <Contact />
-      <hr className="line" />
+      <hr className="line bottom-line" />
       <Footer iconGithub={iconGithub} iconFrontendM={iconFrontendM} iconLinkedin={iconLinkedin} iconTwitter={iconTwitter} />
     </div>
   );

@@ -1,10 +1,9 @@
 .projects {
-    border: 1px solid red;
     margin: 80px 0;
+    border: 1px solid floralwhite;
 }
 
 .projects__header {
-    border: 1px solid palegreen;
     padding: 0;
     display: flex;
     justify-content: space-between;
@@ -22,7 +21,6 @@
 }
 
 .project {
-    border: 1px solid hotpink;
     margin-top: 40px;
     text-align: start;
 }
@@ -51,7 +49,6 @@
 }
 
 .project__urls {
-    border: 1px solid red;
     height: 38px;
 }
 
@@ -69,4 +66,25 @@
 .project__url:hover {
     cursor: pointer;
     color: $green;
+}
+
+@media(min-width:768px) {
+    .projects {
+        margin-top: 48px;
+    }
+
+    .projects__title {
+        font-weight: 72px;
+    }
+
+    .project-contents {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .project {
+        width: 342px;
+    }
 }

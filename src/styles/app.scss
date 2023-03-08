@@ -26,40 +26,41 @@ body {
 }
 
 .App {
-    border: 1px solid red;
     margin: 0 auto;
-    padding: 0 16px;
-    max-width: 375px;
+    padding: 20px 16px 0;
+    min-width: 375px;
+    max-width: 500px;
     text-align: center;
     font-family: "Space Grotesk";
-    background: no-repeat top 124px right 187px $patternRings,
+    background:
+        no-repeat top center $photoMB,
+        no-repeat top 124px right 187px $patternRings,
         no-repeat top 254px left 311px $patternCircle,
         no-repeat top 1320px left 189px $patternRings,
-        no-repeat bottom 220px right 189px $patternRings,
-}
-
-.header {
-    background: no-repeat top center $photoMB;
-    background-size: 174px 383px;
-    margin-bottom: 80px;
+        no-repeat bottom 220px right 189px $patternRings;
+    background-size: 174px 383px, auto, auto, auto, auto;
 }
 
 .line {
     border: 1px solid $white;
 }
 
-@media(min-width:700px) {
+@media(min-width:768px) {
     .App {
-        min-width: 700px;
-        border: 1px solid red;
-        padding: 0 30px;
+        min-width: 768px;
+        padding: 30px 30px 0;
+        border: 1px solid rgb(65, 225, 134);
+        background:
+            no-repeat top 86px right 503px $patternRings,
+            no-repeat top 471px left 702px $patternCircle,
+            no-repeat top 1320px left 189px $patternRings,
+            no-repeat bottom 220px right 189px $patternRings,
+            no-repeat top right $photoTB;
+        background-size: auto, auto, auto, auto, 322px 600px;
     }
 
-    //TB, DT screen has full width
-    .header {
-        background: no-repeat top right $photoTB;
-        background-size: 322px 600px;
-        margin: 0 -30px 60px 0;
+    .middle-line {
+        display: none;
     }
 }
 

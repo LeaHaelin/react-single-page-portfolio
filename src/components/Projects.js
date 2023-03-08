@@ -64,22 +64,24 @@ export const Projects = () => {
                 <h2 className="projects__title">Projects</h2>
                 <button className="projects__contact contact-me">contact me</button>
             </div>
-            {projectsArr.map(project => {
-                return (
-                    <div className="project">
-                        <picture>
-                            <source media="(min-width: 1400px)" srcset={project.imageL} />
-                            <img className='project__thumbnail' src={project.imageS} alt={project.title} />
-                        </picture>
-                        <h3 className="project__title">{project.title}</h3>
-                        <p className="project__skill">{project.skill} </p>
-                        <div className="project__urls">
-                            <a className='project__url view-site' href="/">view portfolio</a>
-                            <a className='project__url view-code' href="/">view code</a>
+            <div className="project-contents">
+                {projectsArr.map(project => {
+                    return (
+                        <div className="project">
+                            <picture>
+                                <source media="(min-width: 1400px)" srcset={project.imageL} />
+                                <img className='project__thumbnail' src={project.imageS} alt={project.title} />
+                            </picture>
+                            <h3 className="project__title">{project.title}</h3>
+                            <p className="project__skill">{project.skill} </p>
+                            <div className="project__urls">
+                                <a className='project__url view-site' href="/">view portfolio</a>
+                                <a className='project__url view-code' href="/">view code</a>
+                            </div>
                         </div>
-                    </div>
-                )
-            })}
+                    )
+                })}
+            </div>
         </div>
     )
 }

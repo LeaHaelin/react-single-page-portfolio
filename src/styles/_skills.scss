@@ -21,3 +21,31 @@
     line-height: 26px;
     color: $grey;
 }
+
+@media(min-width:768px) {
+    .skills {
+        margin: 52px 0 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .skill {
+        width: 345px;
+        text-align: left;
+        margin-bottom: 52px;
+    }
+
+    .skill__title {
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -1.5px;
+        margin-bottom: 14px;
+    }
+
+    .skill__experience {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
