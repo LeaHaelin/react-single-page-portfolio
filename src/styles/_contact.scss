@@ -124,3 +124,32 @@ input:-webkit-autofill:active {
         margin-top: 48px;
     }
 }
+
+@media(min-width:1400px) {
+    .contact {
+        margin: 223px 0 92px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contact__header {
+        border: 1px solid rebeccapurple;
+        text-align: left;
+        max-width: 445px;
+    }
+
+    .contact__title {
+        margin-top: 0;
+        font-size: 88px;
+    }
+
+    .contact__form {
+        margin-top: 0;
+        max-width: 455px;
+    }
+
+    .contact__detail {
+        // padding: 0;
+    }
+}
