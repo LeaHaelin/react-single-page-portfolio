@@ -15,7 +15,7 @@ body {
   max-width: 400px;
   text-align: center;
   font-family: "Space Grotesk";
-  background: no-repeat top center url("../assets/images/image-profile-mobile.webp"), no-repeat top 124px right 187px url("../assets/images/pattern-rings.svg"), no-repeat top 254px left 311px url("../assets/images/pattern-circle.svg"), no-repeat top 1287px left 189px url("../assets/images/pattern-rings.svg"), no-repeat bottom 220px right 189px url("../assets/images/pattern-rings.svg");
+  background: no-repeat top center url("../assets/images/image-profile-mobile.webp"), no-repeat top 124px right 187px url("../assets/images/pattern-rings.svg"), no-repeat top 254px left 311px url("../assets/images/pattern-circle.svg"), no-repeat top 1287px left 189px url("../assets/images/pattern-rings.svg"), no-repeat bottom 300px right 189px url("../assets/images/pattern-rings.svg");
   background-size: 174px 383px, auto, auto, auto, auto;
 }
 
