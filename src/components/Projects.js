@@ -25,7 +25,7 @@ export const Projects = () => {
             imageS: imageSELanding,
             imageL: imageLELanding,
             title: "E-LEARNING LANDING PAGE",
-            skill: ["HTM ", "CSS"],
+            skill: ["HTML ", "CSS"],
             projectUrl: "",
             codeUrl: ""
         }, {
