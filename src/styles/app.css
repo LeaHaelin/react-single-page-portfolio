@@ -5,19 +5,18 @@
 }
 
 body {
-  background: linear-gradient(to bottom, #151515 0%, #151515 81.5%, #242424 81.5%, #242424 100%);
-  border: 1px solid rgb(65, 225, 134);
+  background: linear-gradient(to bottom, #151515 0%, #151515 81%, #242424 81%, #242424 100%);
 }
 
 .App {
   margin: 0 auto;
   padding: 20px 16px 80px;
   min-width: 375px;
-  max-width: 500px;
+  max-width: 400px;
   text-align: center;
   font-family: "Space Grotesk";
-  background: no-repeat top 254px left 311px url("../assets/images/pattern-circle.svg"), no-repeat top center url("../assets/images/image-profile-mobile.webp"), no-repeat top 124px right 187px url("../assets/images/pattern-rings.svg"), no-repeat top 1320px left 189px url("../assets/images/pattern-rings.svg"), no-repeat bottom 220px right 189px url("../assets/images/pattern-rings.svg");
-  background-size: auto, 174px 383px, auto, auto, auto;
+  background: no-repeat top center url("../assets/images/image-profile-mobile.webp"), no-repeat top 124px right 187px url("../assets/images/pattern-rings.svg"), no-repeat top 254px left 311px url("../assets/images/pattern-circle.svg"), no-repeat top 1320px left 189px url("../assets/images/pattern-rings.svg"), no-repeat bottom 220px right 189px url("../assets/images/pattern-rings.svg");
+  background-size: 174px 383px, auto, auto, auto, auto;
 }
 
 .line {
@@ -25,6 +24,9 @@ body {
 }
 
 @media (min-width: 768px) {
+  body {
+    background: linear-gradient(to bottom, #151515 0%, #151515 73.5%, #242424 73.5%, #242424 100%);
+  }
   .App {
     min-width: 768px;
     padding: 30px 30px 40px;
@@ -36,11 +38,13 @@ body {
   }
 }
 @media (min-width: 1400px) {
+  body {
+    background: linear-gradient(to bottom, #151515 0%, #151515 79.5%, #242424 79.5%, #242424 100%);
+  }
   .App {
     min-width: 1440px;
-    border: 1px solid red;
     padding: 40px 165px 92px 160px;
-    background: no-repeat top 86px right 503px url("../assets/images/pattern-rings.svg"), no-repeat top 471px left 702px url("../assets/images/pattern-circle.svg"), no-repeat top 1047px left 570px url("../assets/images/pattern-rings.svg"), no-repeat bottom 130px right 606px url("../assets/images/pattern-rings.svg"), no-repeat top left 835px url("../assets/images/image-profile-desktop.webp");
+    background: no-repeat top 133px right 1010px url("../assets/images/pattern-rings.svg"), no-repeat top 521px left 766px url("../assets/images/pattern-circle.svg"), no-repeat top 1045px left 1149px url("../assets/images/pattern-rings.svg"), no-repeat bottom 219px right 1115px url("../assets/images/pattern-rings.svg"), no-repeat top left 835px url("../assets/images/image-profile-desktop.webp");
     background-size: auto, auto, auto, auto, 445px 720px;
   }
 }
@@ -50,7 +54,6 @@ body {
 }
 .banner {
   margin: 0px auto;
-  border: 1px solid #4EE1A0;
   width: 174px;
 }
 
@@ -62,7 +65,6 @@ body {
 
 @media (min-width: 768px) {
   .banner {
-    border: 1px solid rebeccapurple;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -78,15 +80,10 @@ body {
   }
 }
 .banner__icons {
-  border: 1px solid rebeccapurple;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
-}
-
-.banner__icon {
-  border: 1px solid palegoldenrod;
 }
 
 .banner__icon:hover,
@@ -197,12 +194,10 @@ body {
   }
 }
 .skills {
-  border: 1px solid mediumaquamarine;
   margin: 40px 0 16px;
 }
 
 .skill {
-  border: 1px solid mediumaquamarine;
   margin-bottom: 24px;
 }
 
@@ -254,7 +249,6 @@ body {
 }
 .projects {
   margin: 80px 0;
-  border: 1px solid floralwhite;
 }
 
 .projects__header {
@@ -275,12 +269,10 @@ body {
 }
 
 .project-contents {
-  border: 1px solid palegreen;
   text-align: left;
 }
 
 .project {
-  border: 1px solid rgb(169, 152, 251);
   margin-top: 40px;
   min-width: 343px;
 }
@@ -355,12 +347,10 @@ body {
     font-weight: 88px;
   }
   .project-contents {
-    border: 1px solid fuchsia;
     padding-top: 10px;
   }
   .project {
     margin-top: 70px;
-    border: 1px solid palegoldenrod;
     min-width: 540px;
     position: relative;
   }
@@ -391,7 +381,7 @@ body {
   }
 }
 .contact {
-  margin: 60px 0 87px;
+  margin: 140px 0 87px;
 }
 
 .contact__title {
@@ -497,7 +487,6 @@ input:-webkit-autofill:active {
 @media (min-width: 768px) {
   .contact {
     margin: 100px 130px 92px;
-    border: 1px solid red;
   }
   .contact__title {
     margin-top: 60px;
@@ -519,7 +508,6 @@ input:-webkit-autofill:active {
     justify-content: space-between;
   }
   .contact__header {
-    border: 1px solid rebeccapurple;
     text-align: left;
     max-width: 445px;
   }
@@ -529,7 +517,7 @@ input:-webkit-autofill:active {
   }
   .contact__form {
     margin-top: 0;
-    max-width: 455px;
+    min-width: 445px;
   }
 }
 .footer {

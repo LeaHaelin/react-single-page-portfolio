@@ -19,26 +19,25 @@ $photoDT: url('../assets/images/image-profile-desktop.webp');
 body {
     background: linear-gradient(to bottom,
             $black 0%,
-            $black 81.5%,
-            $darkGrey 81.5%,
+            $black 81%,
+            $darkGrey 81%,
             $darkGrey 100%);
-    border: 1px solid rgb(65, 225, 134);
 }
 
 .App {
     margin: 0 auto;
     padding: 20px 16px 80px;
     min-width: 375px;
-    max-width: 500px;
+    max-width: 400px;
     text-align: center;
     font-family: "Space Grotesk";
     background:
-        no-repeat top 254px left 311px $patternCircle,
         no-repeat top center $photoMB,
         no-repeat top 124px right 187px $patternRings,
+        no-repeat top 254px left 311px $patternCircle,
         no-repeat top 1320px left 189px $patternRings,
         no-repeat bottom 220px right 189px $patternRings;
-    background-size: auto, 174px 383px, auto, auto, auto;
+    background-size: 174px 383px, auto, auto, auto, auto;
 }
 
 .line {
@@ -46,6 +45,14 @@ body {
 }
 
 @media(min-width:768px) {
+    body {
+        background: linear-gradient(to bottom,
+                $black 0%,
+                $black 73.5%,
+                $darkGrey 73.5%,
+                $darkGrey 100%);
+    }
+
     .App {
         min-width: 768px;
         padding: 30px 30px 40px;
@@ -64,15 +71,22 @@ body {
 }
 
 @media(min-width:1400px) {
+    body {
+        background: linear-gradient(to bottom,
+                $black 0%,
+                $black 79.5%,
+                $darkGrey 79.5%,
+                $darkGrey 100%);
+    }
+
     .App {
         min-width: 1440px;
-        border: 1px solid red;
         padding: 40px 165px 92px 160px;
         background:
-            no-repeat top 86px right 503px $patternRings,
-            no-repeat top 471px left 702px $patternCircle,
-            no-repeat top 1047px left 570px $patternRings,
-            no-repeat bottom 130px right 606px $patternRings,
+            no-repeat top 133px right 1010px $patternRings,
+            no-repeat top 521px left 766px $patternCircle,
+            no-repeat top 1045px left 1149px $patternRings,
+            no-repeat bottom 219px right 1115px $patternRings,
             no-repeat top left 835px $photoDT;
         background-size: auto, auto, auto, auto, 445px 720px;
     }

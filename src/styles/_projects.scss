@@ -1,6 +1,5 @@
 .projects {
     margin: 80px 0;
-    border: 1px solid floralwhite;
 }
 
 .projects__header {
@@ -21,12 +20,10 @@
 }
 
 .project-contents {
-    border: 1px solid palegreen;
     text-align: left;
 }
 
 .project {
-    border: 1px solid rgb(169, 152, 251);
     margin-top: 40px;
     min-width: 343px;
 }
@@ -107,13 +104,11 @@
     }
 
     .project-contents {
-        border: 1px solid fuchsia;
         padding-top: 10px;
     }
 
     .project {
         margin-top: 70px;
-        border: 1px solid palegoldenrod;
         min-width: 540px;
         position: relative;
     }
